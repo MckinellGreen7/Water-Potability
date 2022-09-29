@@ -1,15 +1,9 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt 
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.metrics import confusion_matrix, classification_report
-from sklearn.metrics import precision_score, recall_score,f1_score
-from sklearn.metrics import plot_roc_curve
 from streamlit_lottie import st_lottie
 import requests
-import PIL.Image
 st.set_page_config(page_title="Hydr8", page_icon=":tada:", layout= "wide")
 
 from PIL import Image
@@ -74,32 +68,6 @@ time = st.container()
 
 
     
-
-
-
-
-
-
-#@st.cache(for running it for one time if the file name is same then its not going to run again)
-#def get_data():
-#  taxi_data=pd.read_csv
-
-# For customization u can use css:
-# =============================================================================
-# st.markdown(
-#     """
-#     <style>
-#     .main {
-#     background-color:#F5F5F5;
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True)
-# ============================================================================
-    
-#st.markdown("![Alt Text](https://www.edureka.co/blog/wp-content/uploads/2018/08/Insurance-Leadspace-Aniamted.gif)")
-    
-
 st.write("###")
 st.write("###")
 st.write("###")
